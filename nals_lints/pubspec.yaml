@@ -2,12 +2,10 @@ name: nals_lints
 description: A new Flutter package project.
 version: 0.0.1
 publish_to: none
+resolution: workspace
 
 environment:
   sdk: ">=3.5.4 <4.0.0"
-
-# dependency_overrides:
-#   analyzer: 5.13.0
 
 dependencies:
   custom_lint_builder: ^0.8.1

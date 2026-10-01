@@ -23,6 +23,7 @@ class DioExceptionMapper extends ExceptionMapper<RemoteException> {
         case DioExceptionType.connectionTimeout:
         case DioExceptionType.receiveTimeout:
         case DioExceptionType.sendTimeout:
+        case DioExceptionType.transformTimeout:
           return RemoteException(
             kind: RemoteExceptionKind.timeout,
             rootException: exception,

@@ -33,6 +33,10 @@ pubspec.lock
 /build/
 **/coverage
 
+# Melos
+pubspec_overrides.yaml
+**/pubspec_overrides.yaml
+
 # Web related
 lib/generated_plugin_registrant.dart
 
@@ -46,6 +50,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+**/.cxx/
 
 # generated file
 *.g.dart
@@ -66,3 +71,5 @@ tools/gen_text_styles/output/
 env/
 .fvm/
 *.mdb
+
+/afolder/
