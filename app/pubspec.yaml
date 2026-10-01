@@ -72,5 +72,49 @@ flutter:
   uses-material-design: true
   generate: false
   assets:
-    - assets/
     - assets/images/
+  fonts:
+    - family: SegoeUI
+      fonts:
+        - asset: assets/fonts/segoeuil.ttf
+          weight: 300
+
+        - asset: assets/fonts/segoeuisl.ttf
+          weight: 350
+
+        - asset: assets/fonts/segoeui.ttf
+          weight: 400
+
+        - asset: assets/fonts/seguisb.ttf
+          weight: 600
+
+        - asset: assets/fonts/segoeuib.ttf
+          weight: 700
+
+        - asset: assets/fonts/seguibl.ttf
+          weight: 900
+
+
+        - asset: assets/fonts/seguili.ttf
+          weight: 300
+          style: italic
+
+        - asset: assets/fonts/seguisli.ttf
+          weight: 350
+          style: italic
+
+        - asset: assets/fonts/segoeuii.ttf
+          weight: 400
+          style: italic
+
+        - asset: assets/fonts/seguisbi.ttf
+          weight: 600
+          style: italic
+
+        - asset: assets/fonts/segoeuiz.ttf
+          weight: 700
+          style: italic
+
+        - asset: assets/fonts/seguibli.ttf
+          weight: 900
+          style: italic

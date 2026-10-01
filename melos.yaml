@@ -12,6 +12,10 @@ packages:
 # Không cần melos bootstrap nữa - dùng `flutter pub get` ở root là đủ.
 # Bỏ script 'bootstrap' vì nó gây vòng lặp và tự sinh pubspec_overrides.yaml.
 
+ide:
+  intellij:
+    enabled: false
+
 scripts:
   pubget:
     run: melos exec --no-private -- flutter pub get
