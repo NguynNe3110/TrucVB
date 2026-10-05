@@ -5,6 +5,7 @@ import '../../app.dart';
 /// define custom themes here
 final lightTheme = ThemeData(
   brightness: Brightness.light,
+  fontFamily: 'SegoeUI',
   splashColor: Colors.transparent,
 )..addAppColor(
     AppThemeType.light,
@@ -13,6 +14,7 @@ final lightTheme = ThemeData(
 
 final darkTheme = ThemeData(
   brightness: Brightness.dark,
+  fontFamily: 'SegoeUI',
   splashColor: Colors.transparent,
 )..addAppColor(
     AppThemeType.dark,

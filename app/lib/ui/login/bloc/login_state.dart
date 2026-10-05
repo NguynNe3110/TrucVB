@@ -10,6 +10,9 @@ sealed class LoginState extends BaseBlocState with _$LoginState {
   const factory LoginState({
     @Default('') String email,
     @Default('') String password,
+    @Default('') String emailError,
+    @Default('') String passwordError,
+    @Default(false) bool rememberPassword,
     @Default(false) bool isLoginButtonEnabled,
     @Default(false) bool obscureText,
     @Default('') String onPageError,

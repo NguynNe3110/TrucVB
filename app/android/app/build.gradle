@@ -44,7 +44,8 @@ if (flutterVersionName == null) {
 
 android {
     namespace "com.trucvb.app"
-    compileSdkVersion 35
+    compileSdkVersion 36
+    ndkVersion "28.2.13676358"
 
     compileOptions {
         coreLibraryDesugaringEnabled true

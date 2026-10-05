@@ -79,9 +79,6 @@ flutter:
         - asset: assets/fonts/segoeuil.ttf
           weight: 300
 
-        - asset: assets/fonts/segoeuisl.ttf
-          weight: 350
-
         - asset: assets/fonts/segoeui.ttf
           weight: 400
 
@@ -97,10 +94,6 @@ flutter:
 
         - asset: assets/fonts/seguili.ttf
           weight: 300
-          style: italic
-
-        - asset: assets/fonts/seguisli.ttf
-          weight: 350
           style: italic
 
         - asset: assets/fonts/segoeuii.ttf

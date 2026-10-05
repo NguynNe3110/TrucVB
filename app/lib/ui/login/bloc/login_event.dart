@@ -44,3 +44,26 @@ sealed class FakeLoginButtonPressed extends LoginEvent
   const FakeLoginButtonPressed._();
   const factory FakeLoginButtonPressed() = _FakeLoginButtonPressed;
 }
+
+@freezed
+sealed class RememberPasswordChanged extends LoginEvent
+    with _$RememberPasswordChanged {
+  const RememberPasswordChanged._();
+  const factory RememberPasswordChanged({
+    required bool isRemembered,
+  }) = _RememberPasswordChanged;
+}
+
+@freezed
+sealed class GoogleLoginButtonPressed extends LoginEvent
+    with _$GoogleLoginButtonPressed {
+  const GoogleLoginButtonPressed._();
+  const factory GoogleLoginButtonPressed() = _GoogleLoginButtonPressed;
+}
+
+@freezed
+sealed class ForgotPasswordPressed extends LoginEvent
+    with _$ForgotPasswordPressed {
+  const ForgotPasswordPressed._();
+  const factory ForgotPasswordPressed() = _ForgotPasswordPressed;
+}
