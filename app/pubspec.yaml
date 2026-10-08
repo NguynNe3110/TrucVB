@@ -69,6 +69,7 @@ flutter_gen:
   #   inputs:
   #     - assets/color/colors.xml
 flutter:
+  default-flavor: develop
   uses-material-design: true
   generate: false
   assets:

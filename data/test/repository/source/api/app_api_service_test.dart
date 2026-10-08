@@ -31,7 +31,7 @@ void main() {
           () => _noneAuthAppServerApiClient
               .request<ApiAuthResponseData, DataResponse<ApiAuthResponseData>>(
             method: RestMethod.post,
-            path: '/v1/auth/login',
+            path: 'auth/login',
             body: {
               'email': 'inputEmail',
               'password': 'inputPassword',
@@ -75,7 +75,7 @@ void main() {
           () => _noneAuthAppServerApiClient
               .request<ApiAuthResponseData, DataResponse<ApiAuthResponseData>>(
             method: RestMethod.post,
-            path: '/v1/auth/login',
+            path: 'auth/login',
             body: {
               'email': 'inputEmail',
               'password': 'inputPassword',
@@ -100,7 +100,7 @@ void main() {
         when(
           () => _authAppServerApiClient.request<ApiUserData, ApiUserData>(
             method: RestMethod.get,
-            path: '/v1/me',
+            path: 'me',
             successResponseMapperType: SuccessResponseMapperType.jsonObject,
             decoder: any(named: 'decoder', that: isA<Decoder<ApiUserData>>()),
           ),

@@ -19,7 +19,7 @@ class AppApiService {
   }) async {
     return _noneAuthAppServerApiClient.request(
       method: RestMethod.post,
-      path: '/v1/auth/login',
+      path: 'auth/login',
       body: {
         'email': email,
         'password': password,
@@ -31,7 +31,7 @@ class AppApiService {
   Future<void> logout() async {
     await _authAppServerApiClient.request(
       method: RestMethod.post,
-      path: '/v1/auth/logout',
+      path: 'auth/logout',
     );
   }
 
@@ -43,7 +43,7 @@ class AppApiService {
   }) async {
     return _noneAuthAppServerApiClient.request(
       method: RestMethod.post,
-      path: '/v1/auth/register',
+      path: 'auth/register',
       body: {
         'username': username,
         'gender': gender,
@@ -58,7 +58,7 @@ class AppApiService {
   Future<void> forgotPassword(String email) async {
     await _noneAuthAppServerApiClient.request(
       method: RestMethod.post,
-      path: '/v1/auth/forgot-password',
+      path: 'auth/forgot-password',
       body: {
         'email': email,
       },
@@ -72,7 +72,7 @@ class AppApiService {
   }) async {
     await _noneAuthAppServerApiClient.request(
       method: RestMethod.post,
-      path: '/v1/auth/reset-password',
+      path: 'auth/reset-password',
       body: {
         'token': token,
         'email': email,
@@ -85,7 +85,7 @@ class AppApiService {
   Future<ApiUserData?> getMe() async {
     return _authAppServerApiClient.request(
       method: RestMethod.get,
-      path: '/v1/me',
+      path: 'me',
       successResponseMapperType: SuccessResponseMapperType.jsonObject,
       decoder: (json) => ApiUserData.fromJson(json as Map<String, dynamic>),
     );
